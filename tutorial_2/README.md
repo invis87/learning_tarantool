@@ -3,7 +3,9 @@
 3. `docker exec -i -t tutorial_2 sh`
 4. (inside container sh) `tarantoolctl start iplogger`
 5. (from your machine) `curl http://localhost:8090/` several times.
+
 _(inside container sh):_
+
 6. `cd /var/lib/tarantool/iplogger`
 7. `tarantoolctl stop iplogger`
 8. `tarantool`
