@@ -4,7 +4,7 @@ json = selfVar })
 end
 
 function start()
-local server = require('http.server').new(nil, 8081) server:route({ path = '/'}, handler)
+local server = require('http.server').new(nil, 8080) server:route({ path = '/'}, handler)
 server:start()
 end
 
