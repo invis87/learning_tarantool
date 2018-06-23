@@ -1,6 +1,6 @@
-1. `docker build -t 3_steps .`
-2. `docker run --name 3_steps -d -p 3302:3301 -p 8090:8080 -v {current_path}/data:/var/lib/tarantool 3_steps`
-3. `docker exec -i -t 3_steps sh`
+1. `docker build -t 3_step_http .`
+2. `docker run --name 3_step_http -d -p 3302:3301 -p 8090:8080 -v {current_path}/data:/var/lib/tarantool 3_step_http`
+3. `docker exec -i -t 3_step_http sh`
 4. (inside container sh) `tarantoolctl start app1`
 5. (from your machine) `curl http://localhost:8090/` several times.
 
