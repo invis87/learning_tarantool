@@ -7,7 +7,7 @@ docker run -d \
 -v {current_path}/data:/var/lib/tarantool \
 -v {current_path}/users.lua:/usr/local/etc/tarantool/instances.enabled/users.lua \
 --name tutorial_3_tarantool \
-tarantool-nginx_tarantool
+tutorial_3_tarantool
 ```
 3. `docker exec -i -t tutorial_3_tarantool sh`
 4. (inside container sh) `tarantoolctl start users`
